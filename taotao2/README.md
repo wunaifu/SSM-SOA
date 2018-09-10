@@ -96,13 +96,13 @@ Dubbo采用全Spring配置方式，透明化接入应用，对应用没有任何
 Zookeeper是Apacahe Hadoop的子项目，是一个树型的目录服务，支持变更推送，
 适合作为Dubbo服务的注册中心，工业强度较高，可用于生产环境，并推荐使用
 
-linux下Zookeeper的安装：
-第一步：安装jdk
-第二步：解压缩zookeeper压缩包
-第三步：将conf文件夹下zoo_sample.cfg复制一份，改名为zoo.cfg
-第四步：修改配置dataDir属性，指定一个真实目录
-第五步：
-启动zookeeper：bin/zkServer.sh start
-关闭zookeeper：bin/zkServer.sh stop
-查看zookeeper状态：bin/zkServer.sh status
-注意要关闭linux的防火墙。
+linux下Zookeeper的安装：(window下安装类似，压缩包在项目中)
+* 第一步：安装jdk
+* 第二步：解压缩zookeeper压缩包
+* 第三步：将conf文件夹下zoo_sample.cfg复制一份，改名为zoo.cfg
+* 第四步：修改配置dataDir属性，指定一个真实目录
+* 第五步：
+* 启动zookeeper：bin/zkServer.sh start
+* 关闭zookeeper：bin/zkServer.sh stop
+* 查看zookeeper状态：bin/zkServer.sh status
+* 注意要关闭linux的防火墙。
