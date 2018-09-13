@@ -5,6 +5,7 @@
 * dubbo，zookeeper的使用
 * PageHelper分页
 * EasyUI的datagrid的使用，分页
+* dubbo监控中心的使用
 
 ## 系统间通信
 由于淘淘商城是基于soa的架构，表现层和服务层是不同的工程。

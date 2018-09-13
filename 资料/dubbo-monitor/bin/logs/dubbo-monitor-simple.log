@@ -1,0 +1,126 @@
+2018-09-11 09:36:50,998 [main] WARN  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:400) -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.56.1:7070/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&category=configurators&check=false&delay=-1&dubbo=2.5.6&generic=false&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=3252&revision=2.5.6&side=provider&timestamp=1536629809732, dubbo version: 2.5.6, current host: 127.0.0.1
+2018-09-11 09:37:50,019 [New I/O worker #1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:199) -  [DUBBO] All clients has discontected from /192.168.56.1:7070. You can graceful shutdown now., dubbo version: 2.5.6, current host: 192.168.56.1
+2018-09-11 09:38:50,004 [New I/O worker #2] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:199) -  [DUBBO] All clients has discontected from /192.168.56.1:7070. You can graceful shutdown now., dubbo version: 2.5.6, current host: 192.168.56.1
+2018-09-11 09:39:50,006 [New I/O worker #3] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:199) -  [DUBBO] All clients has discontected from /192.168.56.1:7070. You can graceful shutdown now., dubbo version: 2.5.6, current host: 192.168.56.1
+2018-09-11 09:40:50,008 [New I/O worker #4] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:199) -  [DUBBO] All clients has discontected from /192.168.56.1:7070. You can graceful shutdown now., dubbo version: 2.5.6, current host: 192.168.56.1
+2018-09-11 09:41:50,010 [New I/O worker #5] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:199) -  [DUBBO] All clients has discontected from /192.168.56.1:7070. You can graceful shutdown now., dubbo version: 2.5.6, current host: 192.168.56.1
+2018-09-11 09:42:50,009 [New I/O worker #1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:199) -  [DUBBO] All clients has discontected from /192.168.56.1:7070. You can graceful shutdown now., dubbo version: 2.5.6, current host: 192.168.56.1
+2018-09-11 09:46:18,386 [main] ERROR com.alibaba.dubbo.container.Main (Main.java:92) -  [DUBBO] Fail to start server(url: dubbo://192.168.56.1:7070/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&channel.readonly.sent=true&codec=dubbo&delay=-1&dubbo=2.5.6&generic=false&heartbeat=60000&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=10472&revision=2.5.6&side=provider&timestamp=1536630378151) Failed to bind NettyServer on /192.168.56.1:7070, cause: Failed to bind to: /0.0.0.0:7070, dubbo version: 2.5.6, current host: 127.0.0.1
+com.alibaba.dubbo.rpc.RpcException: Fail to start server(url: dubbo://192.168.56.1:7070/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&channel.readonly.sent=true&codec=dubbo&delay=-1&dubbo=2.5.6&generic=false&heartbeat=60000&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=10472&revision=2.5.6&side=provider&timestamp=1536630378151) Failed to bind NettyServer on /192.168.56.1:7070, cause: Failed to bind to: /0.0.0.0:7070
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:279)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.openServer(DubboProtocol.java:256)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.export(DubboProtocol.java:243)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:94)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:56)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.export(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.doLocalExport(RegistryProtocol.java:163)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.export(RegistryProtocol.java:116)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:92)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:54)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.export(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:550)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:346)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:307)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:206)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:109)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:167)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:883)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:46)
+	at com.alibaba.dubbo.container.Main.main(Main.java:86)
+Caused by: com.alibaba.dubbo.remoting.RemotingException: Failed to bind NettyServer on /192.168.56.1:7070, cause: Failed to bind to: /0.0.0.0:7070
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:67)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.<init>(NettyServer.java:63)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyTransporter.bind(NettyTransporter.java:33)
+	at com.alibaba.dubbo.remoting.Transporter$Adaptive.bind(Transporter$Adaptive.java)
+	at com.alibaba.dubbo.remoting.Transporters.bind(Transporters.java:57)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchanger.bind(HeaderExchanger.java:41)
+	at com.alibaba.dubbo.remoting.exchange.Exchangers.bind(Exchangers.java:71)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:277)
+	... 25 more
+Caused by: org.jboss.netty.channel.ChannelException: Failed to bind to: /0.0.0.0:7070
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.doOpen(NettyServer.java:94)
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:62)
+	... 32 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:391)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:315)
+	at org.jboss.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2018-09-11 11:30:56,028 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:212) -  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-127.0.0.1.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.6, current host: 192.168.56.1
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-127.0.0.1.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:184)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:518)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2018-09-11 11:31:21,889 [New I/O worker #2] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:199) -  [DUBBO] All clients has discontected from /192.168.56.1:7070. You can graceful shutdown now., dubbo version: 2.5.6, current host: 192.168.56.1
+2018-09-11 11:31:26,107 [main-SendThread(127.0.0.1:2181)] WARN  org.apache.zookeeper.ClientCnxn$SendThread (ClientCnxn.java:1162) - Session 0x165c650a2ac0000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:68)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:366)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2018-09-11 11:31:29,043 [main-SendThread(127.0.0.1:2181)] WARN  org.apache.zookeeper.ClientCnxn$SendThread (ClientCnxn.java:1162) - Session 0x165c650a2ac0000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2018-09-11 11:31:32,139 [main-SendThread(127.0.0.1:2181)] WARN  org.apache.zookeeper.ClientCnxn$SendThread (ClientCnxn.java:1162) - Session 0x165c650a2ac0000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2018-09-11 11:31:34,810 [main-SendThread(127.0.0.1:2181)] WARN  org.apache.zookeeper.ClientCnxn$SendThread (ClientCnxn.java:1162) - Session 0x165c650a2ac0000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2018-09-11 11:31:36,978 [main-SendThread(127.0.0.1:2181)] WARN  org.apache.zookeeper.ClientCnxn$SendThread (ClientCnxn.java:1162) - Session 0x165c650a2ac0000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2018-09-11 11:31:39,604 [main-SendThread(127.0.0.1:2181)] WARN  org.apache.zookeeper.ClientCnxn$SendThread (ClientCnxn.java:1162) - Session 0x165c650a2ac0000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2018-09-11 11:31:41,939 [main-SendThread(127.0.0.1:2181)] WARN  org.apache.zookeeper.ClientCnxn$SendThread (ClientCnxn.java:1162) - Session 0x165c650a2ac0000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2018-09-11 11:31:44,374 [main-SendThread(127.0.0.1:2181)] WARN  org.apache.zookeeper.ClientCnxn$SendThread (ClientCnxn.java:1162) - Session 0x165c650a2ac0000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2018-09-11 11:44:47,320 [New I/O worker #1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:199) -  [DUBBO] All clients has discontected from /192.168.56.1:7070. You can graceful shutdown now., dubbo version: 2.5.6, current host: 192.168.56.1
