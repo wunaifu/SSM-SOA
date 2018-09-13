@@ -9,7 +9,7 @@
 	            <td>商品类目:</td>
 	            <td>
 	            	<a href="javascript:void(0)" class="easyui-linkbutton selectItemCat">选择类目</a>
-	            	<input type="hidden" name="cid" style="width: 280px;"></input>
+	            	<input type="hidden" name="cid" style="width: 280px;" data-options="required:true"></input>
 	            </td>
 	        </tr>
 	        <tr>
@@ -18,7 +18,7 @@
 	        </tr>
 	        <tr>
 	            <td>商品卖点:</td>
-	            <td><input class="easyui-textbox" name="sellPoint" data-options="multiline:true,validType:'length[0,150]'" style="height:60px;width: 280px;"></input></td>
+	            <td><input class="easyui-textbox" name="sellPoint" data-options="multiline:true,validType:'length[0,150]',required:true" style="height:60px;width: 280px;"></input></td>
 	        </tr>
 	        <tr>
 	            <td>商品价格:</td>
@@ -33,7 +33,7 @@
 	        <tr>
 	            <td>条形码:</td>
 	            <td>
-	                <input class="easyui-textbox" type="text" name="barcode" data-options="validType:'length[1,30]'" />
+	                <input class="easyui-textbox" type="text" name="barcode" data-options="validType:'length[1,30]',required:true" />
 	            </td>
 	        </tr>
 	        <tr>
@@ -46,7 +46,7 @@
 	        <tr>
 	            <td>商品描述:</td>
 	            <td>
-	                <textarea style="width:800px;height:300px;visibility:hidden;" name="desc"></textarea>
+	                <textarea style="width:800px;height:300px;visibility:hidden;" name="desc" data-options="required:true"></textarea>
 	            </td>
 	        </tr>
 	        <tr class="params hide">
@@ -111,7 +111,7 @@
 		*/
 		//ajax的post方式提交表单
 		//$("#itemAddForm").serialize()将表单序列号为key-value形式的字符串
-		alert($("#itemAddForm").serialize());
+		//alert($("#itemAddForm").serialize());
 		$.post("/item/save",$("#itemAddForm").serialize(), function(data){
 			if(data.status == 200){
 				$.messager.alert('提示','新增商品成功!');

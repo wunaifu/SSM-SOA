@@ -67,10 +67,7 @@ var TT = TAOTAO = {
     	$(".picFileUpload").each(function(i,e){
     		var _ele = $(e);
     		_ele.siblings("div.pics").remove();
-    		_ele.after('\
-    			<div class="pics">\
-        			<ul></ul>\
-        		</div>');
+    		_ele.after('<div class="pics"><ul></ul></div>');
     		// 回显图片
         	if(data && data.pics){
         		var imgs = data.pics.split(",");
