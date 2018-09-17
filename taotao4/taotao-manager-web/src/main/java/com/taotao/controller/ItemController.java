@@ -12,6 +12,9 @@ import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.pojo.TbItem;
 import com.taotao.service.ItemService;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 商品管理Controller
  * <p>Title: ItemController</p>
@@ -43,6 +46,19 @@ public class ItemController {
 	@ResponseBody
 	public TaotaoResult addItem(TbItem item, String desc) {
 		TaotaoResult result = itemService.addItem(item, desc);
+		return result;
+	}
+
+	@RequestMapping(value="/rest/item/delete")
+	@ResponseBody
+	public TaotaoResult addItem(Long[] ids) {
+		System.out.println("ids=="+ids);
+		List<Long> idList = new ArrayList<>();
+		for (Long id : ids) {
+			System.out.println("id=="+id);
+			idList.add(id);
+		}
+		TaotaoResult result = itemService.delItem(idList);
 		return result;
 	}
 }
