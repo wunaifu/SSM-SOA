@@ -10,10 +10,17 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
+        <option value="$PROJECT_DIR$/taotao-common/target/maven-archiver/pom.properties" />
         <option value="$PROJECT_DIR$/taotao-common/pom.xml" />
         <option value="$PROJECT_DIR$/taotao-parent/pom.xml" />
         <option value="$PROJECT_DIR$/taotao-content/pom.xml" />
+        <option value="$PROJECT_DIR$/taotao-content/taotao-content-service/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/taotao-content/taotao-content-interface/target/maven-archiver/pom.properties" />
         <option value="$PROJECT_DIR$/taotao-manager/pom.xml" />
+        <option value="$PROJECT_DIR$/taotao-manager/taotao-manager-dao/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/taotao-manager/taotao-manager-pojo/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/taotao-manager/taotao-manager-service/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/taotao-manager/taotao-manager-interface/target/maven-archiver/pom.properties" />
         <option value="$PROJECT_DIR$/taotao-portal-web/pom.xml" />
         <option value="$PROJECT_DIR$/taotao-manager-web/pom.xml" />
       </list>
