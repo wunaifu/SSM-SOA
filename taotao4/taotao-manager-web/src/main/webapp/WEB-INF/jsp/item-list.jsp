@@ -18,7 +18,7 @@
     </thead>
 </table>
 <div id="itemEditWindow" class="easyui-window" title="编辑商品"
-     data-options="modal:true,closed:true,iconCls:'icon-save',href:'/rest/page/item-edit'"
+     data-options="modal:true,closed:true,iconCls:'icon-save',href:'item-edit'"
      style="width:80%;height:80%;padding:10px;">
 </div>
 <script>
@@ -70,32 +70,32 @@
         			});
         			
         			//加载商品规格
-        			$.getJSON('/rest/item/param/item/query/'+data.id,function(_data){
-        				if(_data && _data.status == 200 && _data.data && _data.data.paramData){
-        					$("#itemeEditForm .params").show();
-        					$("#itemeEditForm [name=itemParams]").val(_data.data.paramData);
-        					$("#itemeEditForm [name=itemParamId]").val(_data.data.id);
-        					
-        					//回显商品规格
-        					 var paramData = JSON.parse(_data.data.paramData);
-        					
-        					 var html = "<ul>";
-        					 for(var i in paramData){
-        						 var pd = paramData[i];
-        						 html+="<li><table>";
-        						 html+="<tr><td colspan=\"2\" class=\"group\">"+pd.group+"</td></tr>";
-        						 
-        						 for(var j in pd.params){
-        							 var ps = pd.params[j];
-        							 html+="<tr><td class=\"param\"><span>"+ps.k+"</span>: </td><td><input autocomplete=\"off\" type=\"text\" value='"+ps.v+"'/></td></tr>";
-        						 }
-        						 
-        						 html+="</li></table>";
-        					 }
-        					 html+= "</ul>";
-        					 $("#itemeEditForm .params td").eq(1).html(html);
-        				}
-        			});
+        			// $.getJSON('/rest/item/param/item/query/'+data.id,function(_data){
+        			// 	if(_data && _data.status == 200 && _data.data && _data.data.paramData){
+        			// 		$("#itemeEditForm .params").show();
+        			// 		$("#itemeEditForm [name=itemParams]").val(_data.data.paramData);
+        			// 		$("#itemeEditForm [name=itemParamId]").val(_data.data.id);
+                    //
+        			// 		//回显商品规格
+        			// 		 var paramData = JSON.parse(_data.data.paramData);
+                    //
+        			// 		 var html = "<ul>";
+        			// 		 for(var i in paramData){
+        			// 			 var pd = paramData[i];
+        			// 			 html+="<li><table>";
+        			// 			 html+="<tr><td colspan=\"2\" class=\"group\">"+pd.group+"</td></tr>";
+                    //
+        			// 			 for(var j in pd.params){
+        			// 				 var ps = pd.params[j];
+        			// 				 html+="<tr><td class=\"param\"><span>"+ps.k+"</span>: </td><td><input autocomplete=\"off\" type=\"text\" value='"+ps.v+"'/></td></tr>";
+        			// 			 }
+                    //
+        			// 			 html+="</li></table>";
+        			// 		 }
+        			// 		 html+= "</ul>";
+        			// 		 $("#itemeEditForm .params td").eq(1).html(html);
+        			// 	}
+        			// });
         			
         			TAOTAO.init({
         				"pics" : data.image,

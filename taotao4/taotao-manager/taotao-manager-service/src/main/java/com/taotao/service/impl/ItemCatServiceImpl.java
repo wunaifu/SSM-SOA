@@ -3,6 +3,7 @@ package com.taotao.service.impl;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.taotao.common.pojo.TaotaoResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -50,4 +51,13 @@ public class ItemCatServiceImpl implements ItemCatService {
 		return resultList;
 	}
 
+	@Override
+	public TaotaoResult getItemCatById(long cid) {
+		TbItemCat tbItemCat = itemCatMapper.selectByPrimaryKey(cid);
+		if (tbItemCat != null) {
+			System.out.println(tbItemCat.getName());
+			return TaotaoResult.ok(tbItemCat);
+		}
+		return new TaotaoResult(500,"没有该类目信息",null);
+	}
 }

@@ -19,6 +19,8 @@ import com.taotao.pojo.TbItemDesc;
 import com.taotao.pojo.TbItemExample;
 import com.taotao.service.ItemService;
 
+import javax.sound.midi.Soundbank;
+
 /**
  * 商品管理Service
  * <p>Title: ItemServiceImpl</p>
@@ -80,6 +82,14 @@ public class ItemServiceImpl implements ItemService {
         //向商品描述表插入数据
         itemDescMapper.insert(itemDesc);
         //返回结果
+        return TaotaoResult.ok();
+    }
+
+    @Override
+    public TaotaoResult updateItem(TbItem item, String desc) {
+        TbItemExample tbItemExample = new TbItemExample();
+        itemMapper.updateByPrimaryKeySelective(item);
+        System.out.println(desc);
         return TaotaoResult.ok();
     }
 

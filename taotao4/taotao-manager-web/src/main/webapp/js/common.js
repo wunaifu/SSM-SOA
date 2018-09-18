@@ -43,7 +43,7 @@ var TT = TAOTAO = {
 	},
 	// 格式化价格
 	formatPrice : function(val,row){
-		return (val/1000).toFixed(2);
+		return (val/100).toFixed(2);
 	},
 	// 格式化商品的状态
 	formatItemStatus : function formatStatus(val,row){
@@ -104,7 +104,13 @@ var TT = TAOTAO = {
     	$(".selectItemCat").each(function(i,e){
     		var _ele = $(e);
     		if(data && data.cid){
-    			_ele.after("<span style='margin-left:10px;'>"+data.cid+"</span>");
+                // 加载类目名字
+                $.getJSON('/item/cat/'+data.cid,function(_data){
+                    if(_data.status == 200){
+                        console.log(_data);
+                        _ele.after("<span style='margin-left:10px;'>"+_data.data.name+"</span>");
+                    }
+                });
     		}else{
     			_ele.after("<span style='margin-left:10px;'></span>");
     		}
