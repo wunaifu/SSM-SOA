@@ -17,7 +17,7 @@ $(function(){
 		method : "GET",
 		onContextMenu: function(e,node){
             e.preventDefault();
-            $(this).tree('select',node.target);
+            $(this).tree('select',node.target);//选中当前节点
             $('#contentCategoryMenu').menu('show',{
                 left: e.pageX,
                 top: e.pageY
@@ -45,7 +45,7 @@ $(function(){
 });
 function menuHandler(item){
 	var tree = $("#contentCategory");
-	var node = tree.tree("getSelected");
+	var node = tree.tree("getSelected");//获取当前选中的节点
 	if(item.name === "add"){
 		tree.tree('append', {
             parent: (node?node.target:null),
@@ -54,7 +54,8 @@ function menuHandler(item){
                 id : 0,
                 parentId : node.id
             }]
-        }); 
+        });
+		//选中新建并编辑
 		var _node = tree.tree('find',0);
 		tree.tree("select",_node.target).tree('beginEdit',_node.target);
 	}else if(item.name === "rename"){
