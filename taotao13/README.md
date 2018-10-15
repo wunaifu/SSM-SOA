@@ -1,145 +1,34 @@
 # SSM-SOA
-## 第五天：redis
+## 第六天：solr
 
-### redis缓存逻辑图
-![](缓存逻辑图.png)
+## solr下载安装启动
+下载地址 http://archive.apache.org/dist/lucene/solr/5.4.1/
 
-# redis的使用
+其中： 
+1. src.tgz：带src表示是带源码文件的压缩包，无src是已经编译过的压缩包 
+2. .tgz：Linux相关操作系统使用的压缩包 
+3. .zip：Windows操作系统使用的压缩包
 
-## Redis 安装
-Window 下安装
-下载地址：https://github.com/MSOpenTech/redis/releases。
-Redis 支持 32 位和 64 位。这个需要根据你系统平台的实际情况选择，
-这里我们下载 Redis-x64-xxx.zip压缩包到 C 盘，解压后，将文件夹重新命名为 redis。
+找到start.jar文件将其放入example目录下
 
-打开一个 cmd 窗口 
-使用cd命令切换目录到 C:\redis 运行 redis-server.exe redis.windows.conf 。
+solr的启动、停止、查看命令： 
+1. 启动：bin\solr.cmd start 
+2. 停止：bin\solr.cmd stop 或bin\solr.cmd stop -all 
+3. 查看：bin\solr.cmd status
 
-## 数据类型
-Redis支持五种数据类型：string（字符串），hash（哈希），list（列表），set（集合）及zset(sorted set：有序集合)。
-### String（字符串）
+启动之后就可以打开浏览器输入地址http://localhost:8983/solr/#/来查看solr的管理控制台了
+
+## solr是什么
 ```xml
-redis 127.0.0.1:6379> SET name "runoob"
-OK
-redis 127.0.0.1:6379> GET name
-"runoob"
-```
-### Hash（哈希）
-```xml
-redis> HMSET myhash field1 "Hello" field2 "World"
-"OK"
-redis> HGET myhash field1
-"Hello"
-redis> HGET myhash field2
-"World"
-```
+一、Solr它是一种开放源码的、基于 Lucene Java 的搜索服务器，易于加入到 Web 应用程序中。
 
-### List（列表）
-```xml
-redis 127.0.0.1:6379> lpush runoob redis
-(integer) 1
-redis 127.0.0.1:6379> lpush runoob mongodb
-(integer) 2
-redis 127.0.0.1:6379> lpush runoob rabitmq
-(integer) 3
-redis 127.0.0.1:6379> lrange runoob 0 10
-1) "rabitmq"
-2) "mongodb"
-3) "redis"
-redis 127.0.0.1:6379>
-```
-### Set（集合）
-```xml
-redis 127.0.0.1:6379> sadd runoob redis
-(integer) 1
-redis 127.0.0.1:6379> sadd runoob mongodb
-(integer) 1
-redis 127.0.0.1:6379> sadd runoob rabitmq
-(integer) 1
-redis 127.0.0.1:6379> sadd runoob rabitmq
-(integer) 0
-redis 127.0.0.1:6379> smembers runoob
+二、Solr 提供了层面搜索(就是统计)、命中醒目显示并且支持多种输出格式（包括XML/XSLT 和JSON等格式）。它易于安装和配置，而且附带了一个基于 HTTP 的
 
-1) "redis"
-2) "rabitmq"
-3) "mongodb"
-```
-### zset(sorted set：有序集合)
-```xml
-redis 127.0.0.1:6379> zadd runoob 0 redis
-(integer) 1
-redis 127.0.0.1:6379> zadd runoob 0 mongodb
-(integer) 1
-redis 127.0.0.1:6379> zadd runoob 0 rabitmq
-(integer) 1
-redis 127.0.0.1:6379> zadd runoob 0 rabitmq
-(integer) 0
-redis 127.0.0.1:6379> > ZRANGEBYSCORE runoob 0 1000
-1) "mongodb"
-2) "rabitmq"
-3) "redis"
-```
+管理界面。Solr已经在众多大型的网站中使用，较为成熟和稳定。
 
-## 序号	命令及描述
-```xml
- 1	DEL key
-     该命令用于在 key 存在时删除 key。
-   
- 2	DUMP key 
-    序列化给定 key ，并返回被序列化的值。
-    
- 3	EXISTS key 
-    检查给定 key 是否存在。
-    
- 4	EXPIRE key seconds
-    为给定 key 设置过期时间。
-    
- 5	EXPIREAT key timestamp 
-    EXPIREAT 的作用和 EXPIRE 类似，都用于为 key 设置过期时间。
-     不同在于 EXPIREAT 命令接受的时间参数是 UNIX 时间戳(unix timestamp)。
- 
- 6	PEXPIRE key milliseconds 
-    设置 key 的过期时间以毫秒计。
-    
- 7	PEXPIREAT key milliseconds-timestamp 
-    设置 key 过期时间的时间戳(unix timestamp) 以毫秒计
-    
- 8	KEYS pattern 
-    查找所有符合给定模式( pattern)的 key 。
-    redis 127.0.0.1:6379> SET runoob1 redis
-    OK
-    redis 127.0.0.1:6379> SET runoob2 mysql
-    OK
-    redis 127.0.0.1:6379> SET runoob3 mongodb
-    OK
-    查找以 runoob 为开头的 key：
-    redis 127.0.0.1:6379> KEYS runoob*
-    1) "runoob3"
-    2) "runoob1"
-    3) "runoob2"
-    
- 9	MOVE key db 
-    将当前数据库的 key 移动到给定的数据库 db 当中。
-    
- 10	PERSIST key 
-    移除 key 的过期时间，key 将持久保持。
-    
- 11	PTTL key 
-    以毫秒为单位返回 key 的剩余的过期时间。
-    
- 12	TTL key 
-    以秒为单位，返回给定 key 的剩余生存时间(TTL, time to live)。
-    
- 13	RANDOMKEY 
-    从当前数据库中随机返回一个 key 。
-    
- 14	RENAME key newkey 
-    修改 key 的名称
-    
- 15	RENAMENX key newkey 
-    仅当 newkey 不存在时，将 key 改名为 newkey 。
-    
- 16	TYPE key 
-    返回 key 所储存的值的类型。
-   
+三、Solr 包装并扩展了 Lucene，所以Solr的基本上沿用了Lucene的相关术语。更重要的是，Solr 创建的索引与 Lucene 搜索引擎库完全兼容。
+
+四、通过对Solr 进行适当的配置，某些情况下可能需要进行编码，Solr 可以阅读和使用构建到其他 Lucene 应用程序中的索引。
+
+五、此外，很多 Lucene 工具（如Nutch、 Luke）也可以使用Solr 创建的索引。可以使用 Solr 的表现优异的基本搜索功能，也可以对它进行扩展从而满足企业的需要。
 ```
