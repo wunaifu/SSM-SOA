@@ -18,6 +18,32 @@ solr的启动、停止、查看命令：
 
 启动之后就可以打开浏览器输入地址http://localhost:8983/solr/#/来查看solr的管理控制台了
 
+## 启动方式: 
+ 配置链接https://blog.csdn.net/qq_33195578/article/details/53350525
+
+ 1、部署在Tomcat。2、自带jetty服务器启动
+
+以Tomcat为例
+
+1.将solr-5.5.3下的service下的solr-webapp复制到Tomcat 下的webapp下，并改名solr（名字随意）；
+
+2.将solr-5.5.3下的service下的lib下的ext下的所有jar包复制到Tomcat下solr下web-inf下lib下；
+
+3.在Tomcat下solr下web-inf创建classes文件夹，并把solr5.5.3下的solr-5.5.3\solr-5.5.3\example\resources下的log4.perportiy复制到classes文件下；
+
+到此，启动Tomcat，可以正常访问solr了，localhost:8080/solr/index.html#
+
+4.创建core核心；在任意地方创建文件夹home，把solr5.53下service下solr复制到这个home下，在这里，我创建在Tomcat的bin目录下了，并且修改配置文件Tomcat下的solr下web-inf下web.xml
+```xml
+    <env-entry>
+       <env-entry-name>solr/home</env-entry-name>
+       <env-entry-value>C:\solrhome</env-entry-value>
+       <env-entry-type>java.lang.String</env-entry-type>
+    </env-entry>
+```
+
+
+
 ## solr是什么
 ```xml
 一、Solr它是一种开放源码的、基于 Lucene Java 的搜索服务器，易于加入到 Web 应用程序中。
