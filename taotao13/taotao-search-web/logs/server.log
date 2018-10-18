@@ -1,0 +1,1000 @@
+
+
+[INFO ] 2018-10-18 09:48:42,342 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'taotao-search-web': initialization started
+
+
+[INFO ] 2018-10-18 09:48:42,357 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'taotao-search-web-servlet': startup date [Thu Oct 18 09:48:42 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-10-18 09:48:42,384 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2018-10-18 09:48:42,646 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2018-10-18 09:48:42,726 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [resource/resource.properties]
+
+
+[INFO ] 2018-10-18 09:48:42,729 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-10-18 09:48:42,987 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String com.taotao.search.controller.SearchController.search(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2018-10-18 09:48:43,187 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-search-web-servlet': startup date [Thu Oct 18 09:48:42 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-10-18 09:48:43,223 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-search-web-servlet': startup date [Thu Oct 18 09:48:42 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-10-18 09:48:43,322 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-127.0.0.1.cache, data: {*/com.helpserver.service.PayAccountService:*=empty://192.168.56.1/com.helpserver.service.PayAccountService?category=consumers&check=false&classifier=*&group=*&interface=com.helpserver.service.PayAccountService&version=* empty://192.168.56.1/com.helpserver.service.PayAccountService?category=providers&check=false&classifier=*&group=*&interface=com.helpserver.service.PayAccountService&version=*, com.helpserver.service.IdentityService=empty://192.168.56.1:20880/com.helpserver.service.IdentityService?anyhost=true&application=helpserver-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.helpserver.service.IdentityService&methods=getUserInfoDtoByUserId,disagreeUserIdentity,agreeUserIdentity,insertIdenty,getIdentityByUserId,getUserInfoDtoListByCheckState,updateIdenty&pid=1920&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1531529063366, com.helpserver.service.NewsService=empty://192.168.56.1:20880/com.helpserver.service.NewsService?anyhost=true&application=helpserver-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.helpserver.service.NewsService&methods=getNewsList,deleteNewsById,getNewsById,insertNews&pid=1920&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1531529063561, com.taotao.service.ItemService=empty://192.168.56.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,delItem,getItemById,updateItem,getItemDescById&pid=11808&side=provider&timeout=300000&timestamp=1539827277074, */com.taotao.search.service.SearchItemService:*=empty://192.168.56.1/com.taotao.search.service.SearchItemService?category=consumers&check=false&classifier=*&group=*&interface=com.taotao.search.service.SearchItemService&version=* empty://192.168.56.1/com.taotao.search.service.SearchItemService?category=providers&check=false&classifier=*&group=*&interface=com.taotao.search.service.SearchItemService&version=*, */com.helpserver.service.AcceptOrderService:*=empty://192.168.56.1/com.helpserver.service.AcceptOrderService?category=consumers&check=false&classifier=*&group=*&interface=com.helpserver.service.AcceptOrderService&version=* empty://192.168.56.1/com.helpserver.service.AcceptOrderService?category=providers&check=false&classifier=*&group=*&interface=com.helpserver.service.AcceptOrderService&version=*, */com.taotao.content.service.ContentCategoryService:*=empty://192.168.56.1/com.taotao.content.service.ContentCategoryService?category=consumers&check=false&classifier=*&group=*&interface=com.taotao.content.service.ContentCategoryService&version=* empty://192.168.56.1/com.taotao.content.service.ContentCategoryService?category=providers&check=false&classifier=*&group=*&interface=com.taotao.content.service.ContentCategoryService&version=*, com.taotao.search.service.SearchService=empty://192.168.56.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=12064&side=provider&timeout=300000&timestamp=1539827317383, com.helpserver.service.GoldService=empty://192.168.56.1:20880/com.helpserver.service.GoldService?anyhost=true&application=helpserver-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.helpserver.service.GoldService&methods=getGoldAddDtoByGoldAddId,insertGold,getGold,addGoldadd,updateAllUserGoldState,getGoldAddDtoListByGetTime,getGoldaddingListByUserId,getGoldUserDtoList,getGoldaddedListByUserId,updateGoldSignIn,getGoldaddListByUserId,addPayGoldByMoney,goleToMoney,addPayGoldByGoldAddId,getGoldHistoryListByUserId&pid=1920&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1531529063477, com.helpserver.service.AcceptOrderService=empty://192.168.56.1:20880/com.helpserver.service.AcceptOrderService?anyhost=true&application=helpserver-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.helpserver.service.AcceptOrderService&methods=getAcceptorderById,checkIsOrNotComment,updateDateStateByAcceptId,getOrderAcceptDtoListByAcceptOrderList,getOrderAcceptDtoListByUserId,getAcceptOrderUserDtoListByOrderId,getOrderAcceptDtoFinishListByUserIdAndState,getOrderAcceptDtoListByUserIdAndSearch,getOrderAcceptDtoListByOrderId,insertAcceptOrder,updateDateStateAcceptList,getacceptOrderFinishListByState,updateAcceptOrderStateUpdateTime,getOrderAcceptDtoIngListByUserIdAndState&pid=1920&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1531529063684, e&classifier=*&group=*&interface=com.taotao.search.service.SearchService&version=*=empty://192.168.56.1/com.taotao.search.service.SearchService?category=providers&check=false&classifier=*&group=*&interface=com.taotao.search.service.SearchService&version=*, com.helpserver.service.UserService=empty://192.168.56.1:20880/com.helpserver.service.UserService?anyhost=true&application=helpserver-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.helpserver.service.UserService&methods=doResetPsw,loginByPhone,addAdmin,addByPhoneAndPsw,getUserListByNotPermission,managerLoginByPhoneAndPsw,updateUser,updateUserPermission,getUserList,getUserListByPermission,doSetPsw,loginByPhoneAndPsw,doSetPayAccount,insertUser,selectByPrimaryKey,getAllUseingUserList,managerBanUser,managerResetUserPsw,getUserByPhone,doBindPhone,managerUnBanUser&pid=1920&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1531529044952, */com.taotao.service.ItemCatService:*=consumer://192.168.56.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=consumers&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=9460&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1536637645940 dubbo://192.168.56.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=10944&side=provider&timeout=300000&timestamp=1536637654474, */com.helpserver.service.NewsService:*=empty://192.168.56.1/com.helpserver.service.NewsService?category=consumers&check=false&classifier=*&group=*&interface=com.helpserver.service.NewsService&version=* empty://192.168.56.1/com.helpserver.service.NewsService?category=providers&check=false&classifier=*&group=*&interface=com.helpserver.service.NewsService&version=*, */com.taotao.content.service.ContentService:*=empty://192.168.56.1/com.taotao.content.service.ContentService?category=consumers&check=false&classifier=*&group=*&interface=com.taotao.content.service.ContentService&version=* empty://192.168.56.1/com.taotao.content.service.ContentService?category=providers&check=false&classifier=*&group=*&interface=com.taotao.content.service.ContentService&version=*, com.taotao.content.service.ContentCategoryService=empty://192.168.56.1:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,getContentCategoryList,delContentCategory&pid=4068&side=provider&timeout=300000&timestamp=1539827291973, com.helpserver.service.PayAccountService=empty://192.168.56.1:20880/com.helpserver.service.PayAccountService?anyhost=true&application=helpserver-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.helpserver.service.PayAccountService&methods=getPayAccoun,updatePayAccount,insertPayAccount&pid=1920&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1531529063449, */com.taotao.search.service.SearchService:*=empty://192.168.56.1/com.taotao.search.service.SearchService?category=consumers&check=false&classifier=*&group=*&interface=com.taotao.search.service.SearchService&version=* empty://192.168.56.1/com.taotao.search.service.SearchService?category=providers&check=false&classifier=*&group=*&interface=com.taotao.search.service.SearchService&version=*, */com.helpserver.service.OrderTypeService:*=empty://192.168.56.1/com.helpserver.service.OrderTypeService?category=consumers&check=false&classifier=*&group=*&interface=com.helpserver.service.OrderTypeService&version=* empty://192.168.56.1/com.helpserver.service.OrderTypeService?category=providers&check=false&classifier=*&group=*&interface=com.helpserver.service.OrderTypeService&version=*, com.taotao.sso.service.UserService=empty://192.168.1.98/com.taotao.sso.service.UserService?application=taotao-sso-web&category=configurators&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=getUserByToken,checkData,login,register&pid=15056&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1528850418665 empty://192.168.1.98/com.taotao.sso.service.UserService?application=taotao-sso-web&category=routers&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=getUserByToken,checkData,login,register&pid=15056&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1528850418665 dubbo://192.168.1.98:20883/com.taotao.sso.service.UserService?anyhost=true&application=taotao-sso&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=getUserByToken,checkData,login,register&pid=6576&side=provider&timeout=300000&timestamp=1528850408228, com.taotao.content.service.ContentService=empty://192.168.56.1:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=delContent,getContentListByCid,getContentByCid,addContent&pid=4068&side=provider&timeout=300000&timestamp=1539827301288, */com.helpserver.service.OrderService:*=empty://192.168.56.1/com.helpserver.service.OrderService?category=consumers&check=false&classifier=*&group=*&interface=com.helpserver.service.OrderService&version=* empty://192.168.56.1/com.helpserver.service.OrderService?category=providers&check=false&classifier=*&group=*&interface=com.helpserver.service.OrderService&version=*, com.alibaba.dubbo.monitor.MonitorService=empty://192.168.56.1/com.alibaba.dubbo.monitor.MonitorService?category=configurators&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=4648&timestamp=1539567131284 empty://192.168.56.1/com.alibaba.dubbo.monitor.MonitorService?category=routers&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=4648&timestamp=1539567131284 empty://192.168.56.1/com.alibaba.dubbo.monitor.MonitorService?category=providers&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=4648&timestamp=1539567131284, */com.alibaba.dubbo.monitor.MonitorService:*=consumer://192.168.56.1/com.alibaba.dubbo.monitor.MonitorService?category=consumers&check=false&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=10944&timestamp=1536637645147 consumer://192.168.56.1/com.alibaba.dubbo.monitor.MonitorService?category=consumers&check=false&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=9460&timestamp=1536637655317 dubbo://192.168.56.1:7070/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&delay=-1&dubbo=2.5.6&generic=false&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=8884&revision=2.5.6&side=provider&timestamp=1536638144406, */com.taotao.sso.service.UserService:*=empty://192.168.56.1/com.taotao.sso.service.UserService?category=consumers&check=false&classifier=*&group=*&interface=com.taotao.sso.service.UserService&version=* empty://192.168.56.1/com.taotao.sso.service.UserService?category=providers&check=false&classifier=*&group=*&interface=com.taotao.sso.service.UserService&version=*, com.helpserver.service.OrderTypeService=empty://192.168.56.1:20880/com.helpserver.service.OrderTypeService?anyhost=true&application=helpserver-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.helpserver.service.OrderTypeService&methods=getOrdertypeList,getOrderTypeById,getBigTypeList,getBigtypeById,getOrdertypeListByState,getOrderTypeDtoList,insertBigType,insertOrderType,updateBigType,updateOrderType,updateOrderTypeTypeById&pid=1920&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1531529063600, com.taotao.search.service.SearchItemService=empty://192.168.56.1:20882/com.taotao.search.service.SearchItemService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=12064&side=provider&timeout=300000&timestamp=1539827308064, */com.taotao.service.ItemService:*=consumer://192.168.56.1/com.taotao.service.ItemService?application=taotao-manager-web&category=consumers&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=9460&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1536637655313 dubbo://192.168.56.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=10944&side=provider&timeout=300000&timestamp=1536637644997, com.helpserver.service.OrderService=empty://192.168.56.1:20880/com.helpserver.service.OrderService?anyhost=true&application=helpserver-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.helpserver.service.OrderService&methods=checkIsOrNotComment,getOrderById,getOrderUserDtoListBySendUserIdAndSearch,getOrderUserDtoListByStateAndCity,getOrderCommentListByOrderId,getOrderUserDtoList,deleteOrderById,insertMySendOrderComment,updateOrderPutMoney,updateReturnGoods,getOrderUserDtoByOrderId,updateReUploadOrder,getOrderUserDtoListByOrderList,insertOrder,getOrderUserDtoListByStateAndSearch,updateAgreeAcceptAndOrder,getOrderUserDtoListByStateAndSendUserId,getOrderUserDtoByOrder,getOrderUserDtoListByTypeId,getAcceptOrderUserDtoListByOrderId,updateOrder,getOrderUserDtoListBySendUserId,insertMyAcceptOrderComment,getOrderinfoListByState,updateDisagreeAccept,checkDoubleComment,updateCancelAccept,updateDownloadOrder,getOrderUserDtoListByState&pid=1920&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1531529063623, com.helpserver.service.FeedbackService=empty://192.168.56.1:20880/com.helpserver.service.FeedbackService?anyhost=true&application=helpserver-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.helpserver.service.FeedbackService&methods=getFeedbackListByUserId,deleteFeedback,insertFeedback,updateFeedback,getFeedbackListByReplyTime&pid=1920&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1531529063423, com.taotao.service.ItemCatService=empty://192.168.56.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList,getItemCatById&pid=11808&side=provider&timeout=300000&timestamp=1539827286385, */com.helpserver.service.UserService:*=empty://192.168.56.1/com.helpserver.service.UserService?category=consumers&check=false&classifier=*&group=*&interface=com.helpserver.service.UserService&version=* empty://192.168.56.1/com.helpserver.service.UserService?category=providers&check=false&classifier=*&group=*&interface=com.helpserver.service.UserService&version=*, */com.helpserver.service.MoneyService:*=empty://192.168.56.1/com.helpserver.service.MoneyService?category=consumers&check=false&classifier=*&group=*&interface=com.helpserver.service.MoneyService&version=* empty://192.168.56.1/com.helpserver.service.MoneyService?category=providers&check=false&classifier=*&group=*&interface=com.helpserver.service.MoneyService&version=*, */com.helpserver.service.IdentityService:*=empty://192.168.56.1/com.helpserver.service.IdentityService?category=consumers&check=false&classifier=*&group=*&interface=com.helpserver.service.IdentityService&version=* empty://192.168.56.1/com.helpserver.service.IdentityService?category=providers&check=false&classifier=*&group=*&interface=com.helpserver.service.IdentityService&version=*, com.helpserver.service.MoneyService=empty://192.168.56.1:20880/com.helpserver.service.MoneyService?anyhost=true&application=helpserver-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.helpserver.service.MoneyService&methods=getMoneygetedListByUserId,updateMonthBackData,updateMoneyByPrimaryKey,getMoneyAddDtoByMoneyAddId,insertMoneyHistory,getMoney,insertMoney,getMoneyHistory,getMoneyGetDtoListByGetTime,getMoneyAddListByUserId,addMoneyGet,getMoneyAddDtoListByGetTime,addPayMoneyByMoneyAddId,getMoneygetingListByUserId,getMoneyUserDtoList,addYearBackData,getBackDataList,getMoneyAddedListByUserId,getBackDataYearList,getMoneyAddingListByUserId,getManagerGetMoney,addMoneyGetByMoneyGetId,getMoneyHistoryListByUserId,addMoneyadd,getMoneygetListByUserId&pid=1920&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1531529063654, */com.helpserver.service.FeedbackService:*=empty://192.168.56.1/com.helpserver.service.FeedbackService?category=consumers&check=false&classifier=*&group=*&interface=com.helpserver.service.FeedbackService&version=* empty://192.168.56.1/com.helpserver.service.FeedbackService?category=providers&check=false&classifier=*&group=*&interface=com.helpserver.service.FeedbackService&version=*, */com.helpserver.service.GoldService:*=empty://192.168.56.1/com.helpserver.service.GoldService?category=consumers&check=false&classifier=*&group=*&interface=com.helpserver.service.GoldService&version=* empty://192.168.56.1/com.helpserver.service.GoldService?category=providers&check=false&classifier=*&group=*&interface=com.helpserver.service.GoldService&version=*}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-10-18 09:48:43,336 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2018-10-18 09:48:52,354 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2018-10-18 09:48:52,354 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=wnf
+
+
+[INFO ] 2018-10-18 09:48:52,355 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_102
+
+
+[INFO ] 2018-10-18 09:48:52,355 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2018-10-18 09:48:52,359 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=C:\Program Files\Java\jdk1.8.0_102\jre
+
+
+[INFO ] 2018-10-18 09:48:52,359 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=C:\apache-maven-3.5.0\boot\plexus-classworlds-2.5.2.jar;D:\IDEA\IntelliJ IDEA 2018.1.4\lib\idea_rt.jar
+
+
+[INFO ] 2018-10-18 09:48:52,367 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_102\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.8.0_102\bin;C:\Program Files\Java\jdk1.8.0_102\jre\bin;C:\apache-maven-3.5.0\bin;C:\Program Files\TortoiseGit\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;.
+
+
+[INFO ] 2018-10-18 09:48:52,368 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+
+
+[INFO ] 2018-10-18 09:48:52,370 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2018-10-18 09:48:52,372 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2018-10-18 09:48:52,373 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-10-18 09:48:52,373 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2018-10-18 09:48:52,373 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=Administrator
+
+
+[INFO ] 2018-10-18 09:48:52,374 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\Administrator
+
+
+[INFO ] 2018-10-18 09:48:52,374 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\IdeaCode\SSM-SOA\taotao13\taotao-search-web
+
+
+[INFO ] 2018-10-18 09:48:52,375 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@d2c52a6
+
+
+[INFO ] 2018-10-18 09:48:52,402 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-10-18 09:48:52,403 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+
+
+[INFO ] 2018-10-18 09:48:52,409 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x16684db1edd0003, negotiated timeout = 30000
+
+
+[INFO ] 2018-10-18 09:48:52,410 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-10-18 09:48:52,431 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.56.1/com.taotao.search.service.SearchService?application=taotao-search-web&category=consumers&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=9016&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1539827323275, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-18 09:48:52,453 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.56.1/com.taotao.search.service.SearchService?application=taotao-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=9016&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1539827323275, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-18 09:48:52,491 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.56.1/com.taotao.search.service.SearchService?application=taotao-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=9016&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1539827323275, urls: [dubbo://192.168.56.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=12064&side=provider&timeout=300000&timestamp=1539827317383, empty://192.168.56.1/com.taotao.search.service.SearchService?application=taotao-search-web&category=configurators&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=9016&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1539827323275, empty://192.168.56.1/com.taotao.search.service.SearchService?application=taotao-search-web&category=routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=9016&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1539827323275], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-18 09:48:52,766 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.56.1:20882 from NettyClient 192.168.56.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xf6a41c7d, /192.168.56.1:56600 => /192.168.56.1:20882]], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-18 09:48:52,766 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient wnf/192.168.56.1 connect to the server /192.168.56.1:20882, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-18 09:48:52,840 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.taotao.search.service.SearchService from url zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-search-web&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=9016&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1539827323275, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-18 09:48:52,915 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'taotao-search-web': initialization completed in 10571 ms
+
+
+[INFO ] 2018-10-18 09:55:54,453 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.56.1:20882,url:dubbo://192.168.56.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.taotao.search.service.SearchService&methods=search&pid=9016&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1539827323275, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[WARN ] 2018-10-18 09:55:55,883 method:com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:160)
+ [DUBBO] client reconnect to 192.168.56.1:20882 find error . url: dubbo://192.168.56.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.taotao.search.service.SearchService&methods=search&pid=9016&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1539827323275, dubbo version: 2.5.3, current host: 192.168.56.1
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.56.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.taotao.search.service.SearchService&methods=search&pid=9016&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1539827323275) failed to connect to server /192.168.56.1:20882, error message is:Connection refused: no further information: /192.168.56.1:20882
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: no further information: /192.168.56.1:20882
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	... 3 more
+
+
+[INFO ] 2018-10-18 09:56:01,890 method:com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:101)
+ [DUBBO] Close old netty channel [id: 0xf6a41c7d, /192.168.56.1:56600 :> /192.168.56.1:20882] on create new netty channel [id: 0xb184f872, /192.168.56.1:57558 => /192.168.56.1:20882], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-18 09:56:01,891 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.56.1:20882 from NettyClient 192.168.56.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xb184f872, /192.168.56.1:57558 => /192.168.56.1:20882]], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-18 09:56:10,720 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.56.1/com.taotao.search.service.SearchService?application=taotao-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=9016&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1539827323275, urls: [dubbo://192.168.56.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=8012&side=provider&timeout=300000&timestamp=1539827770698, dubbo://192.168.56.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=12064&side=provider&timeout=300000&timestamp=1539827317383], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-18 09:56:18,013 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.56.1/com.taotao.search.service.SearchService?application=taotao-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=9016&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1539827323275, urls: [dubbo://192.168.56.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=8012&side=provider&timeout=300000&timestamp=1539827770698], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[WARN ] 2018-10-18 09:56:18,016 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-127.0.0.1.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.56.1
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-127.0.0.1.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[INFO ] 2018-10-18 09:57:29,076 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.56.1:20882,url:dubbo://192.168.56.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.taotao.search.service.SearchService&methods=search&pid=9016&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1539827323275, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[WARN ] 2018-10-18 09:57:30,937 method:com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:160)
+ [DUBBO] client reconnect to 192.168.56.1:20882 find error . url: dubbo://192.168.56.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.taotao.search.service.SearchService&methods=search&pid=9016&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1539827323275, dubbo version: 2.5.3, current host: 192.168.56.1
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.56.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.taotao.search.service.SearchService&methods=search&pid=9016&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1539827323275) failed to connect to server /192.168.56.1:20882, error message is:Connection refused: no further information: /192.168.56.1:20882
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: no further information: /192.168.56.1:20882
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+
+
+[INFO ] 2018-10-18 09:57:35,944 method:com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:101)
+ [DUBBO] Close old netty channel [id: 0xb184f872, /192.168.56.1:57558 :> /192.168.56.1:20882] on create new netty channel [id: 0x879651ce, /192.168.56.1:57805 => /192.168.56.1:20882], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-18 09:57:35,945 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.56.1:20882 from NettyClient 192.168.56.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x879651ce, /192.168.56.1:57805 => /192.168.56.1:20882]], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-18 09:57:47,131 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'taotao-search-web': initialization started
+
+
+[INFO ] 2018-10-18 09:57:47,145 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'taotao-search-web-servlet': startup date [Thu Oct 18 09:57:47 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-10-18 09:57:47,166 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2018-10-18 09:57:47,341 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2018-10-18 09:57:47,418 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [resource/resource.properties]
+
+
+[INFO ] 2018-10-18 09:57:47,422 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-10-18 09:57:47,745 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String com.taotao.search.controller.SearchController.search(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2018-10-18 09:57:47,921 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-search-web-servlet': startup date [Thu Oct 18 09:57:47 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-10-18 09:57:47,993 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-search-web-servlet': startup date [Thu Oct 18 09:57:47 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-10-18 09:57:48,101 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-127.0.0.1.cache, data: {*/com.helpserver.service.PayAccountService:*=empty://192.168.56.1/com.helpserver.service.PayAccountService?category=consumers&check=false&classifier=*&group=*&interface=com.helpserver.service.PayAccountService&version=* empty://192.168.56.1/com.helpserver.service.PayAccountService?category=providers&check=false&classifier=*&group=*&interface=com.helpserver.service.PayAccountService&version=*, com.helpserver.service.IdentityService=empty://192.168.56.1:20880/com.helpserver.service.IdentityService?anyhost=true&application=helpserver-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.helpserver.service.IdentityService&methods=getUserInfoDtoByUserId,disagreeUserIdentity,agreeUserIdentity,insertIdenty,getIdentityByUserId,getUserInfoDtoListByCheckState,updateIdenty&pid=1920&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1531529063366, com.helpserver.service.NewsService=empty://192.168.56.1:20880/com.helpserver.service.NewsService?anyhost=true&application=helpserver-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.helpserver.service.NewsService&methods=getNewsList,deleteNewsById,getNewsById,insertNews&pid=1920&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1531529063561, com.taotao.service.ItemService=empty://192.168.56.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,delItem,getItemById,updateItem,getItemDescById&pid=11808&side=provider&timeout=300000&timestamp=1539827277074, */com.taotao.search.service.SearchItemService:*=empty://192.168.56.1/com.taotao.search.service.SearchItemService?category=consumers&check=false&classifier=*&group=*&interface=com.taotao.search.service.SearchItemService&version=* empty://192.168.56.1/com.taotao.search.service.SearchItemService?category=providers&check=false&classifier=*&group=*&interface=com.taotao.search.service.SearchItemService&version=*, */com.helpserver.service.AcceptOrderService:*=empty://192.168.56.1/com.helpserver.service.AcceptOrderService?category=consumers&check=false&classifier=*&group=*&interface=com.helpserver.service.AcceptOrderService&version=* empty://192.168.56.1/com.helpserver.service.AcceptOrderService?category=providers&check=false&classifier=*&group=*&interface=com.helpserver.service.AcceptOrderService&version=*, */com.taotao.content.service.ContentCategoryService:*=empty://192.168.56.1/com.taotao.content.service.ContentCategoryService?category=consumers&check=false&classifier=*&group=*&interface=com.taotao.content.service.ContentCategoryService&version=* empty://192.168.56.1/com.taotao.content.service.ContentCategoryService?category=providers&check=false&classifier=*&group=*&interface=com.taotao.content.service.ContentCategoryService&version=*, com.taotao.search.service.SearchService=empty://192.168.56.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=13304&side=provider&timeout=300000&timestamp=1539827865116, com.helpserver.service.GoldService=empty://192.168.56.1:20880/com.helpserver.service.GoldService?anyhost=true&application=helpserver-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.helpserver.service.GoldService&methods=getGoldAddDtoByGoldAddId,insertGold,getGold,addGoldadd,updateAllUserGoldState,getGoldAddDtoListByGetTime,getGoldaddingListByUserId,getGoldUserDtoList,getGoldaddedListByUserId,updateGoldSignIn,getGoldaddListByUserId,addPayGoldByMoney,goleToMoney,addPayGoldByGoldAddId,getGoldHistoryListByUserId&pid=1920&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1531529063477, com.helpserver.service.AcceptOrderService=empty://192.168.56.1:20880/com.helpserver.service.AcceptOrderService?anyhost=true&application=helpserver-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.helpserver.service.AcceptOrderService&methods=getAcceptorderById,checkIsOrNotComment,updateDateStateByAcceptId,getOrderAcceptDtoListByAcceptOrderList,getOrderAcceptDtoListByUserId,getAcceptOrderUserDtoListByOrderId,getOrderAcceptDtoFinishListByUserIdAndState,getOrderAcceptDtoListByUserIdAndSearch,getOrderAcceptDtoListByOrderId,insertAcceptOrder,updateDateStateAcceptList,getacceptOrderFinishListByState,updateAcceptOrderStateUpdateTime,getOrderAcceptDtoIngListByUserIdAndState&pid=1920&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1531529063684, e&classifier=*&group=*&interface=com.taotao.search.service.SearchService&version=*=empty://192.168.56.1/com.taotao.search.service.SearchService?category=providers&check=false&classifier=*&group=*&interface=com.taotao.search.service.SearchService&version=*, com.helpserver.service.UserService=empty://192.168.56.1:20880/com.helpserver.service.UserService?anyhost=true&application=helpserver-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.helpserver.service.UserService&methods=doResetPsw,loginByPhone,addAdmin,addByPhoneAndPsw,getUserListByNotPermission,managerLoginByPhoneAndPsw,updateUser,updateUserPermission,getUserList,getUserListByPermission,doSetPsw,loginByPhoneAndPsw,doSetPayAccount,insertUser,selectByPrimaryKey,getAllUseingUserList,managerBanUser,managerResetUserPsw,getUserByPhone,doBindPhone,managerUnBanUser&pid=1920&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1531529044952, */com.taotao.service.ItemCatService:*=consumer://192.168.56.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=consumers&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=9460&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1536637645940 dubbo://192.168.56.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=10944&side=provider&timeout=300000&timestamp=1536637654474, */com.helpserver.service.NewsService:*=empty://192.168.56.1/com.helpserver.service.NewsService?category=consumers&check=false&classifier=*&group=*&interface=com.helpserver.service.NewsService&version=* empty://192.168.56.1/com.helpserver.service.NewsService?category=providers&check=false&classifier=*&group=*&interface=com.helpserver.service.NewsService&version=*, */com.taotao.content.service.ContentService:*=empty://192.168.56.1/com.taotao.content.service.ContentService?category=consumers&check=false&classifier=*&group=*&interface=com.taotao.content.service.ContentService&version=* empty://192.168.56.1/com.taotao.content.service.ContentService?category=providers&check=false&classifier=*&group=*&interface=com.taotao.content.service.ContentService&version=*, com.taotao.content.service.ContentCategoryService=empty://192.168.56.1:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,getContentCategoryList,delContentCategory&pid=4068&side=provider&timeout=300000&timestamp=1539827291973, com.helpserver.service.PayAccountService=empty://192.168.56.1:20880/com.helpserver.service.PayAccountService?anyhost=true&application=helpserver-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.helpserver.service.PayAccountService&methods=getPayAccoun,updatePayAccount,insertPayAccount&pid=1920&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1531529063449, */com.taotao.search.service.SearchService:*=empty://192.168.56.1/com.taotao.search.service.SearchService?category=consumers&check=false&classifier=*&group=*&interface=com.taotao.search.service.SearchService&version=* empty://192.168.56.1/com.taotao.search.service.SearchService?category=providers&check=false&classifier=*&group=*&interface=com.taotao.search.service.SearchService&version=*, */com.helpserver.service.OrderTypeService:*=empty://192.168.56.1/com.helpserver.service.OrderTypeService?category=consumers&check=false&classifier=*&group=*&interface=com.helpserver.service.OrderTypeService&version=* empty://192.168.56.1/com.helpserver.service.OrderTypeService?category=providers&check=false&classifier=*&group=*&interface=com.helpserver.service.OrderTypeService&version=*, com.taotao.sso.service.UserService=empty://192.168.1.98/com.taotao.sso.service.UserService?application=taotao-sso-web&category=configurators&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=getUserByToken,checkData,login,register&pid=15056&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1528850418665 empty://192.168.1.98/com.taotao.sso.service.UserService?application=taotao-sso-web&category=routers&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=getUserByToken,checkData,login,register&pid=15056&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1528850418665 dubbo://192.168.1.98:20883/com.taotao.sso.service.UserService?anyhost=true&application=taotao-sso&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=getUserByToken,checkData,login,register&pid=6576&side=provider&timeout=300000&timestamp=1528850408228, com.taotao.content.service.ContentService=empty://192.168.56.1:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=delContent,getContentListByCid,getContentByCid,addContent&pid=4068&side=provider&timeout=300000&timestamp=1539827301288, */com.helpserver.service.OrderService:*=empty://192.168.56.1/com.helpserver.service.OrderService?category=consumers&check=false&classifier=*&group=*&interface=com.helpserver.service.OrderService&version=* empty://192.168.56.1/com.helpserver.service.OrderService?category=providers&check=false&classifier=*&group=*&interface=com.helpserver.service.OrderService&version=*, com.alibaba.dubbo.monitor.MonitorService=empty://192.168.56.1/com.alibaba.dubbo.monitor.MonitorService?category=configurators&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=4648&timestamp=1539567131284 empty://192.168.56.1/com.alibaba.dubbo.monitor.MonitorService?category=routers&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=4648&timestamp=1539567131284 empty://192.168.56.1/com.alibaba.dubbo.monitor.MonitorService?category=providers&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=4648&timestamp=1539567131284, */com.alibaba.dubbo.monitor.MonitorService:*=consumer://192.168.56.1/com.alibaba.dubbo.monitor.MonitorService?category=consumers&check=false&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=10944&timestamp=1536637645147 consumer://192.168.56.1/com.alibaba.dubbo.monitor.MonitorService?category=consumers&check=false&dubbo=2.5.3&interface=com.alibaba.dubbo.monitor.MonitorService&pid=9460&timestamp=1536637655317 dubbo://192.168.56.1:7070/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=simple-monitor&delay=-1&dubbo=2.5.6&generic=false&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&pid=8884&revision=2.5.6&side=provider&timestamp=1536638144406, */com.taotao.sso.service.UserService:*=empty://192.168.56.1/com.taotao.sso.service.UserService?category=consumers&check=false&classifier=*&group=*&interface=com.taotao.sso.service.UserService&version=* empty://192.168.56.1/com.taotao.sso.service.UserService?category=providers&check=false&classifier=*&group=*&interface=com.taotao.sso.service.UserService&version=*, com.helpserver.service.OrderTypeService=empty://192.168.56.1:20880/com.helpserver.service.OrderTypeService?anyhost=true&application=helpserver-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.helpserver.service.OrderTypeService&methods=getOrdertypeList,getOrderTypeById,getBigTypeList,getBigtypeById,getOrdertypeListByState,getOrderTypeDtoList,insertBigType,insertOrderType,updateBigType,updateOrderType,updateOrderTypeTypeById&pid=1920&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1531529063600, com.taotao.search.service.SearchItemService=empty://192.168.56.1:20882/com.taotao.search.service.SearchItemService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=13304&side=provider&timeout=300000&timestamp=1539827855521, */com.taotao.service.ItemService:*=consumer://192.168.56.1/com.taotao.service.ItemService?application=taotao-manager-web&category=consumers&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=9460&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1536637655313 dubbo://192.168.56.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=10944&side=provider&timeout=300000&timestamp=1536637644997, com.helpserver.service.OrderService=empty://192.168.56.1:20880/com.helpserver.service.OrderService?anyhost=true&application=helpserver-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.helpserver.service.OrderService&methods=checkIsOrNotComment,getOrderById,getOrderUserDtoListBySendUserIdAndSearch,getOrderUserDtoListByStateAndCity,getOrderCommentListByOrderId,getOrderUserDtoList,deleteOrderById,insertMySendOrderComment,updateOrderPutMoney,updateReturnGoods,getOrderUserDtoByOrderId,updateReUploadOrder,getOrderUserDtoListByOrderList,insertOrder,getOrderUserDtoListByStateAndSearch,updateAgreeAcceptAndOrder,getOrderUserDtoListByStateAndSendUserId,getOrderUserDtoByOrder,getOrderUserDtoListByTypeId,getAcceptOrderUserDtoListByOrderId,updateOrder,getOrderUserDtoListBySendUserId,insertMyAcceptOrderComment,getOrderinfoListByState,updateDisagreeAccept,checkDoubleComment,updateCancelAccept,updateDownloadOrder,getOrderUserDtoListByState&pid=1920&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1531529063623, com.helpserver.service.FeedbackService=empty://192.168.56.1:20880/com.helpserver.service.FeedbackService?anyhost=true&application=helpserver-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.helpserver.service.FeedbackService&methods=getFeedbackListByUserId,deleteFeedback,insertFeedback,updateFeedback,getFeedbackListByReplyTime&pid=1920&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1531529063423, com.taotao.service.ItemCatService=empty://192.168.56.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList,getItemCatById&pid=11808&side=provider&timeout=300000&timestamp=1539827286385, */com.helpserver.service.UserService:*=empty://192.168.56.1/com.helpserver.service.UserService?category=consumers&check=false&classifier=*&group=*&interface=com.helpserver.service.UserService&version=* empty://192.168.56.1/com.helpserver.service.UserService?category=providers&check=false&classifier=*&group=*&interface=com.helpserver.service.UserService&version=*, */com.helpserver.service.MoneyService:*=empty://192.168.56.1/com.helpserver.service.MoneyService?category=consumers&check=false&classifier=*&group=*&interface=com.helpserver.service.MoneyService&version=* empty://192.168.56.1/com.helpserver.service.MoneyService?category=providers&check=false&classifier=*&group=*&interface=com.helpserver.service.MoneyService&version=*, */com.helpserver.service.IdentityService:*=empty://192.168.56.1/com.helpserver.service.IdentityService?category=consumers&check=false&classifier=*&group=*&interface=com.helpserver.service.IdentityService&version=* empty://192.168.56.1/com.helpserver.service.IdentityService?category=providers&check=false&classifier=*&group=*&interface=com.helpserver.service.IdentityService&version=*, com.helpserver.service.MoneyService=empty://192.168.56.1:20880/com.helpserver.service.MoneyService?anyhost=true&application=helpserver-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.helpserver.service.MoneyService&methods=getMoneygetedListByUserId,updateMonthBackData,updateMoneyByPrimaryKey,getMoneyAddDtoByMoneyAddId,insertMoneyHistory,getMoney,insertMoney,getMoneyHistory,getMoneyGetDtoListByGetTime,getMoneyAddListByUserId,addMoneyGet,getMoneyAddDtoListByGetTime,addPayMoneyByMoneyAddId,getMoneygetingListByUserId,getMoneyUserDtoList,addYearBackData,getBackDataList,getMoneyAddedListByUserId,getBackDataYearList,getMoneyAddingListByUserId,getManagerGetMoney,addMoneyGetByMoneyGetId,getMoneyHistoryListByUserId,addMoneyadd,getMoneygetListByUserId&pid=1920&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1531529063654, */com.helpserver.service.FeedbackService:*=empty://192.168.56.1/com.helpserver.service.FeedbackService?category=consumers&check=false&classifier=*&group=*&interface=com.helpserver.service.FeedbackService&version=* empty://192.168.56.1/com.helpserver.service.FeedbackService?category=providers&check=false&classifier=*&group=*&interface=com.helpserver.service.FeedbackService&version=*, */com.helpserver.service.GoldService:*=empty://192.168.56.1/com.helpserver.service.GoldService?category=consumers&check=false&classifier=*&group=*&interface=com.helpserver.service.GoldService&version=* empty://192.168.56.1/com.helpserver.service.GoldService?category=providers&check=false&classifier=*&group=*&interface=com.helpserver.service.GoldService&version=*}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-10-18 09:57:48,113 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2018-10-18 09:57:57,127 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2018-10-18 09:57:57,129 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=wnf
+
+
+[INFO ] 2018-10-18 09:57:57,130 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_102
+
+
+[INFO ] 2018-10-18 09:57:57,131 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2018-10-18 09:57:57,132 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=C:\Program Files\Java\jdk1.8.0_102\jre
+
+
+[INFO ] 2018-10-18 09:57:57,133 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=C:\apache-maven-3.5.0\boot\plexus-classworlds-2.5.2.jar;D:\IDEA\IntelliJ IDEA 2018.1.4\lib\idea_rt.jar
+
+
+[INFO ] 2018-10-18 09:57:57,136 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_102\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.8.0_102\bin;C:\Program Files\Java\jdk1.8.0_102\jre\bin;C:\apache-maven-3.5.0\bin;C:\Program Files\TortoiseGit\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;.
+
+
+[INFO ] 2018-10-18 09:57:57,138 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+
+
+[INFO ] 2018-10-18 09:57:57,139 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2018-10-18 09:57:57,140 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2018-10-18 09:57:57,141 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-10-18 09:57:57,142 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2018-10-18 09:57:57,143 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=Administrator
+
+
+[INFO ] 2018-10-18 09:57:57,144 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\Administrator
+
+
+[INFO ] 2018-10-18 09:57:57,145 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\IdeaCode\SSM-SOA\taotao13\taotao-search-web
+
+
+[INFO ] 2018-10-18 09:57:57,148 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@3237e7b4
+
+
+[INFO ] 2018-10-18 09:57:57,191 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-10-18 09:57:57,194 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+
+
+[INFO ] 2018-10-18 09:57:57,204 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x16684db1edd0008, negotiated timeout = 30000
+
+
+[INFO ] 2018-10-18 09:57:57,206 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-10-18 09:57:57,230 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.56.1/com.taotao.search.service.SearchService?application=taotao-search-web&category=consumers&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=4808&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1539827868057, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-18 09:57:57,249 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.56.1/com.taotao.search.service.SearchService?application=taotao-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=4808&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1539827868057, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-18 09:57:57,283 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.56.1/com.taotao.search.service.SearchService?application=taotao-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=4808&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1539827868057, urls: [dubbo://192.168.56.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=13304&side=provider&timeout=300000&timestamp=1539827865116, empty://192.168.56.1/com.taotao.search.service.SearchService?application=taotao-search-web&category=configurators&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=4808&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1539827868057, empty://192.168.56.1/com.taotao.search.service.SearchService?application=taotao-search-web&category=routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=4808&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1539827868057], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-18 09:57:57,426 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.56.1:20882 from NettyClient 192.168.56.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x641ba331, /192.168.56.1:57884 => /192.168.56.1:20882]], dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-18 09:57:57,426 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient wnf/192.168.56.1 connect to the server /192.168.56.1:20882, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-18 09:57:57,468 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.taotao.search.service.SearchService from url zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-search-web&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=4808&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1539827868057, dubbo version: 2.5.3, current host: 192.168.56.1
+
+
+[INFO ] 2018-10-18 09:57:57,509 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'taotao-search-web': initialization completed in 10376 ms
+
+
+[WARN ] 2018-10-18 11:50:05,616 method:com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:112)
+ [DUBBO] Decode rpc result failed: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@6ee8c16f}, dubbo version: 2.5.3, current host: 192.168.56.1
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@6ee8c16f}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-10-18 11:50:05,625 method:com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:112)
+ [DUBBO] Decode rpc result failed: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@4015ff90}, dubbo version: 2.5.3, current host: 192.168.56.1
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@4015ff90}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-10-18 11:50:05,631 method:com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:112)
+ [DUBBO] Decode rpc result failed: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@603fc1a8}, dubbo version: 2.5.3, current host: 192.168.56.1
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@603fc1a8}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-10-18 11:50:06,647 method:com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:112)
+ [DUBBO] Decode rpc result failed: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@5ce151f5}, dubbo version: 2.5.3, current host: 192.168.56.1
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@5ce151f5}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-10-18 11:50:06,653 method:com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:112)
+ [DUBBO] Decode rpc result failed: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@79130f3}, dubbo version: 2.5.3, current host: 192.168.56.1
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@79130f3}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-10-18 11:50:06,658 method:com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:112)
+ [DUBBO] Decode rpc result failed: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@7c1df90e}, dubbo version: 2.5.3, current host: 192.168.56.1
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@7c1df90e}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-10-18 11:50:07,669 method:com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:112)
+ [DUBBO] Decode rpc result failed: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@121e3646}, dubbo version: 2.5.3, current host: 192.168.56.1
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@121e3646}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-10-18 11:50:07,671 method:com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:112)
+ [DUBBO] Decode rpc result failed: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@59964b5f}, dubbo version: 2.5.3, current host: 192.168.56.1
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@59964b5f}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-10-18 11:50:07,673 method:com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:112)
+ [DUBBO] Decode rpc result failed: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@29ab2aee}, dubbo version: 2.5.3, current host: 192.168.56.1
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@29ab2aee}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[INFO ] 2018-10-18 11:50:07,676 method:com.taotao.search.exception.GlobalExceptionResolver.resolveException(GlobalExceptionResolver.java:25)
+进入全局异常处理器。。。。。
+
+
+[INFO ] 2018-10-18 11:50:07,676 method:com.taotao.search.exception.GlobalExceptionResolver.resolveException(GlobalExceptionResolver.java:25)
+进入全局异常处理器。。。。。
+
+
+[INFO ] 2018-10-18 11:50:07,676 method:com.taotao.search.exception.GlobalExceptionResolver.resolveException(GlobalExceptionResolver.java:25)
+进入全局异常处理器。。。。。
+
+
+[ERROR] 2018-10-18 11:50:07,680 method:com.taotao.search.exception.GlobalExceptionResolver.resolveException(GlobalExceptionResolver.java:30)
+系统发生异常
+com.alibaba.dubbo.rpc.RpcException: Failed to invoke the method search in the service com.taotao.search.service.SearchService. Tried 3 times of the providers [192.168.56.1:20882] (1/1) from the registry 127.0.0.1:2181 on the consumer 192.168.56.1 using the dubbo version 2.5.3. Last error is: Failed to invoke remote method: search, provider: dubbo://192.168.56.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search-web&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=4808&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1539827868057, cause: java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@121e3646}
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@121e3646}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+	at com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:101)
+	at com.alibaba.dubbo.rpc.cluster.support.AbstractClusterInvoker.invoke(AbstractClusterInvoker.java:227)
+	at com.alibaba.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker.invoke(MockClusterInvoker.java:72)
+	at com.alibaba.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:52)
+	at com.alibaba.dubbo.common.bytecode.proxy0.search(proxy0.java)
+	at com.taotao.search.controller.SearchController.search(SearchController.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:222)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:814)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:737)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:969)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:860)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:845)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.alibaba.dubbo.remoting.RemotingException: java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@121e3646}
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@121e3646}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.returnFromResponse(DefaultFuture.java:190)
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:110)
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:84)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:96)
+	at com.alibaba.dubbo.rpc.protocol.AbstractInvoker.invoke(AbstractInvoker.java:144)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:53)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:48)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:74)
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53)
+	at com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:77)
+	... 45 more
+
+
+[ERROR] 2018-10-18 11:50:07,684 method:com.taotao.search.exception.GlobalExceptionResolver.resolveException(GlobalExceptionResolver.java:30)
+系统发生异常
+com.alibaba.dubbo.rpc.RpcException: Failed to invoke the method search in the service com.taotao.search.service.SearchService. Tried 3 times of the providers [192.168.56.1:20882] (1/1) from the registry 127.0.0.1:2181 on the consumer 192.168.56.1 using the dubbo version 2.5.3. Last error is: Failed to invoke remote method: search, provider: dubbo://192.168.56.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search-web&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=4808&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1539827868057, cause: java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@59964b5f}
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@59964b5f}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+	at com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:101)
+	at com.alibaba.dubbo.rpc.cluster.support.AbstractClusterInvoker.invoke(AbstractClusterInvoker.java:227)
+	at com.alibaba.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker.invoke(MockClusterInvoker.java:72)
+	at com.alibaba.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:52)
+	at com.alibaba.dubbo.common.bytecode.proxy0.search(proxy0.java)
+	at com.taotao.search.controller.SearchController.search(SearchController.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:222)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:814)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:737)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:969)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:860)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:845)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.alibaba.dubbo.remoting.RemotingException: java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@59964b5f}
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@59964b5f}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.returnFromResponse(DefaultFuture.java:190)
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:110)
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:84)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:96)
+	at com.alibaba.dubbo.rpc.protocol.AbstractInvoker.invoke(AbstractInvoker.java:144)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:53)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:48)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:74)
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53)
+	at com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:77)
+	... 45 more
+
+
+[ERROR] 2018-10-18 11:50:07,682 method:com.taotao.search.exception.GlobalExceptionResolver.resolveException(GlobalExceptionResolver.java:30)
+系统发生异常
+com.alibaba.dubbo.rpc.RpcException: Failed to invoke the method search in the service com.taotao.search.service.SearchService. Tried 3 times of the providers [192.168.56.1:20882] (1/1) from the registry 127.0.0.1:2181 on the consumer 192.168.56.1 using the dubbo version 2.5.3. Last error is: Failed to invoke remote method: search, provider: dubbo://192.168.56.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search-web&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=4808&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1539827868057, cause: java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@29ab2aee}
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@29ab2aee}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+	at com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:101)
+	at com.alibaba.dubbo.rpc.cluster.support.AbstractClusterInvoker.invoke(AbstractClusterInvoker.java:227)
+	at com.alibaba.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker.invoke(MockClusterInvoker.java:72)
+	at com.alibaba.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:52)
+	at com.alibaba.dubbo.common.bytecode.proxy0.search(proxy0.java)
+	at com.taotao.search.controller.SearchController.search(SearchController.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:222)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:814)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:737)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:969)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:860)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:845)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.alibaba.dubbo.remoting.RemotingException: java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@29ab2aee}
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.0.105:8188/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@29ab2aee}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.returnFromResponse(DefaultFuture.java:190)
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:110)
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:84)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:96)
+	at com.alibaba.dubbo.rpc.protocol.AbstractInvoker.invoke(AbstractInvoker.java:144)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:53)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:48)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:74)
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53)
+	at com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:77)
+	... 45 more
+
+
+[WARN ] 2018-10-18 13:30:33,365 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/item/1202453093.html] in DispatcherServlet with name 'taotao-search-web'
