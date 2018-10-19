@@ -52,6 +52,7 @@ public class ItemController {
 	@RequestMapping(value="/item/save", method=RequestMethod.POST)
 	@ResponseBody
 	public TaotaoResult addItem(TbItem item, String desc) {
+		item.setImage("https://img12.360buyimg.com/n1/s450x450_jfs/t7345/317/2992103239/101654/957d6a4b/59b8d845N33be9092.jpg");
 		TaotaoResult result = itemService.addItem(item, desc);
 		return result;
 	}
