@@ -1,4 +1,4 @@
-package com.taotao.impl;
+package com.taotao.sso.service.impl;
 
 import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.common.utils.JsonUtils;
