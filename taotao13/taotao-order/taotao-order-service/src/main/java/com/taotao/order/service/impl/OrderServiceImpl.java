@@ -1,4 +1,4 @@
-package com.taotao.sso.service.impl;
+package com.taotao.order.service.impl;
 
 import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.jedis.JedisClient;
